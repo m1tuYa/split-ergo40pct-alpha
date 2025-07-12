@@ -26,7 +26,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        layer_6 {
+        defolt_layer {
             bindings = <
 &kp ESC   &kp Q      &kp W            &kp E                        &kp R      &kp T  &bt BT_SEL 0  &mkp MB2  &kp Y          &kp U        &kp I                          &kp O       &kp P         &kp APOS
 &kp TAB   &kp A      &kp S            &kp D                        &kp F      &kp G  &bt BT_SEL 1  &to 1     &kp H          &kp J        &kp K                          &kp L       &kp MINUS     &kp EQUAL
@@ -35,7 +35,7 @@
             >;
         };
 
-        layer_7 {
+        mouse_layer {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB2  &kp LC(C)       &kp LC(V)        &kp UP_ARROW     &trans           &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &to 2   &trans    &msc SCRL_UP    &kp LEFT_ARROW   &kp DOWN_ARROW   &kp RIGHT_ARROW  &trans  &trans
@@ -44,12 +44,12 @@
             >;
         };
 
-        layer_8 {
+        symbol_layer {
             bindings = <
-&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &trans  &none     &kp N6     &kp N7  &kp N8    &kp N9  &kp N0  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &to 2   &none     &none      &kp N4  &kp N5    &kp N6  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &none      &kp N1  &kp N2    &kp N3  &trans  &trans
-&trans  &trans  &trans  &trans  &none   &to 0   &to 1   &kp BSPC  &kp ENTER  &to 0   &kp RGUI  &trans  &trans  &trans
+&trans  &kp N1     &kp N2    &kp N3    &kp N4    &kp N5    &trans  &none     &kp N6     &kp N7  &kp N8    &kp N9  &kp N0     &trans
+&trans  &kp GRAVE  &kp FSLH  &kp BSLH  &kp LBKT  &kp RBKT  &to 2   &none     &none      &kp N4  &kp N5    &kp N6  &kp PLUS   &kp MINUS
+&trans  &kp APOS   &kp SEMI  &trans    &trans    &trans                      &none      &kp N1  &kp N2    &kp N3  &kp EQUAL  &trans
+&trans  &trans     &trans    &trans    &none     &to 0     &to 1   &kp BSPC  &kp ENTER  &to 0   &kp RGUI  &trans  &trans     &trans
             >;
         };
 
